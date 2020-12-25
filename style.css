@@ -1,0 +1,313 @@
+body{
+    background-image: url("portfolio_bg.jpg");
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+#container{
+    margin: 0 auto;
+    width: 800px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+#content{
+    background-color: white;
+}
+
+#profile{
+    background-color: lightslategray;  
+    background-image: url("profile_bg.jpg");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    margin-top: -50px; 
+}
+
+.about .photo-inner{
+    float: left;
+    margin-left: 50px;
+    padding-bottom: 0px;
+}
+    
+.about{
+    float: left;
+    margin-top: 30px;
+    width: 400px;
+    margin-left: 20px;
+}
+
+.about h1{
+    font-weight: 900;
+    color: white;
+    line-height: 34px;
+    margin-top: 8px;
+}
+
+.personal-info{
+    float: left;
+    margin-top: 80px;
+    width: 310px;
+    min-height: 230px;
+    margin-left: -60px;
+}
+
+.personal-info li{
+    line-height: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    float: left;
+    width: 293px;
+}
+
+.personal-info li label{
+    color: white;
+    float: left;
+    padding: 4px 7px;
+    font-weight: 550px;
+    text-transform: uppercase;
+}
+
+.personal-info li span{
+    float: right;
+    padding-top: 4px;
+    width: 201px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+
+ .social-icons-container button{
+    position: relative;
+    opacity: 0;
+    border: none;
+    right: -755px;
+    padding: 2px 9px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: goldenrod;
+} 
+
+.pulse-button{
+    color: white !important;
+}
+
+ul.social-icons{
+    opacity: 0;
+    transition: all ease 1s;
+    
+}
+
+.menu{
+    background-color: #ededed;
+    height: 100px;
+    padding-left: 100px;
+}
+
+.tabs li  a{
+    padding-top: 28px;
+    color: black;
+    text-align: center;
+    line-height: 20px;
+    display: inline-block ;
+    text-decoration: none;  
+    margin-left: -20px;
+    width: 150px;
+}
+
+.tabs a i{
+    width: 150px;
+    
+}
+
+.tabs i{
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 35px;
+}
+
+
+
+#logo{
+    float: left;
+    overflow: hidden;
+    margin-left: 10px;
+    display: none;
+}
+
+.tabs li.active{
+    background: url("hover-img.jpg" no-repeat);
+}
+
+.tabs li.active a{
+    color: goldenrod;
+}
+
+a.tab-profile.active i{
+    animation: bounce 2s infinite;
+}
+
+a.tab-resume.active i{
+    animation: bounce 2s infinite;
+}
+
+a.tab-contact.active i{
+    animation: bounce 2s infinite;
+}
+@keyframes bounce
+{
+    0% ,20% ,50% ,80% ,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-0px);
+    }
+    59%{
+        transform: translateY(-10px);
+    }
+}
+
+.tabs  li{
+    display: inline-block;
+}
+
+  table,th,td,tr{
+     border: solid black 2px;
+     text-align: center;
+}
+ 
+table th{
+    font-weight: bold;
+}
+table{
+    margin-bottom: 10px;
+}
+
+.education h3{
+    margin-left: 10px;
+}
+
+.left-name  h4{
+    font-size: 20px;
+}
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+  
+
+.social-icons-container ,
+.social-text > .socialicons {
+  position: relative;
+  float: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#socialShare  a {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#socialShare > * > span {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15);
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+#socialShare > * > span:hover,
+#socialShare > .open > span {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  transform: scale(1.25);
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+#socialGallery {
+  left: 50%;
+  margin: 0 auto 0;
+  position: absolute;
+  top: 60px;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  width: 400px;
+}
+
+#socialGallery a {
+  visibility: hidden;
+  opacity: 0;
+  margin: 5px 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  top: 10px;
+}
+
+#socialGallery a > span {
+  position: relative;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.socialToolBox {
+  cursor: default;
+}
+
+.pointer {
+  cursor: pointer
+}
+
+.fa-facebook:hover {
+  background: #3b5998 !important
+}
+
+.fa-whatsapp:hover {
+    background: green !important;
+}
+
+.fa-linkedin:hover {
+    background: rgb(79, 193, 238);
+}
+
+
+@media only screen and (max-width: 480px) {
+  #socialGallery {
+    width: 120px;
+  }
+}
+
